@@ -1,1 +1,54 @@
-!
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <link rel="stylesheet" href="./style.css"> 
+</head> 
+<body> 
+<div class="container"> 
+    <form class="user-form"> 
+        <label>   
+            Xəstənin tam adı  
+          <input name="firstname" type="text" placeholder="Xəstənin tam adı " required> 
+        </label> 
+         
+        <label> 
+            Vəsiqə seriyası və nömrəsi 
+          <input name="lastname" type="text" placeholder="Vəsiqə seriyası və nömrəsi" required> 
+        </label> 
+       
+        <label> 
+          Cinsi 
+          <select class="gender" name="gender"> 
+            <option value="male">Kişi</option> 
+            <option value="female">Qadın</option> 
+          </select> 
+        </label> 
+        <label > 
+            Yaş
+            <input name="age" type="text" placeholder="yasinizi daxil edin" > 
+        </label> 
+        <label> 
+            Email ünvanı 
+          <input name="email" type="email" placeholder="Email ünvanı qeyd edin"> 
+        </label> 
+        <label > 
+            Telefon nömrəsi 
+            <input name="tel" type="tel" placeholder="Telefon nömrəsi daxil edin" > 
+        </label> 
+        <textarea name="text" rows="8" cols="40"> 
+            Simptomların təsviri  
+            </textarea> 
+         <label> 
+            Təkrar qəbul 
+            <input class="acceptance" name="resend" type="checkbox" > 
+         </label> 
+        <button class="send">Göndər</button> 
+      </form> 
+     </div> 
+    <script src="./script.js"></script> 
+</body> 
+</html>
